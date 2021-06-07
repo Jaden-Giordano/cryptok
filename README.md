@@ -17,7 +17,7 @@
 2. Clone the repo with submodules:
 
 ``` sh
-git clone --recurse-submodules <git>
+git clone --recurse-submodules https://github.com/Jaden-Giordano/cryptok
 ```
 
 ### Installing toolchain
@@ -36,7 +36,6 @@ tar -xzf xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-<arch>.tar.gz -C ./esp
 #### Building and Flashing tools
 
 ``` sh
-cargo install cargo-xbuild
 cargo install cargo-espflash
 # For python alternative (not recommended) use:
 # pip install esptool 
@@ -48,6 +47,25 @@ rust-xtensa requires some setup which can be done by running the configure scrip
 
 ``` sh
 ./configure
-source setenv # Setup variables for cross-compiling xtensa targets
+```
+
+Before you build youll need to add the xtensa compilers to your path:
+
+``` sh
+source setenv
+```
+
+### Building & Flashing
+
+To build:
+
+``` sh
+cargo build
+```
+
+To flash:
+
+``` sh
+cargo espflash --chip esp32 --example esp32 --speed 460800 /dev/ttyUSB0
 ```
 
