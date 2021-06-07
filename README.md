@@ -60,12 +60,14 @@ source setenv
 To build:
 
 ``` sh
+cd cryptok
 cargo build
 ```
 
 To flash:
 
 ``` sh
+cd cryptok
 cargo espflash --chip esp32 --example esp32 --speed 460800 /dev/ttyUSB0
 ```
 
