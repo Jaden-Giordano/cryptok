@@ -48,6 +48,6 @@ rust-xtensa requires some setup which can be done by running the configure scrip
 
 ``` sh
 ./configure
-./setenv # Setup variables for cross-compiling xtensa targets
+source setenv # Setup variables for cross-compiling xtensa targets
 ```
 
