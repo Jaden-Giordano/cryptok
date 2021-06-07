@@ -17,7 +17,7 @@
 2. Clone the repo with submodules:
 
 ``` sh
-git clone --recursive-submodules <git>
+git clone --recurse-submodules <git>
 ```
 
 ### Installing toolchain
