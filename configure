@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+(cd ./rust-xtensa && ./configure --experimental-targets=Xtensa)
+(cd ./rust-xtensa && ./x.py build --stage 2)

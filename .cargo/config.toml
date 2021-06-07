@@ -1,0 +1,13 @@
+[target.xtensa-esp32-none-elf] # esp32
+runner = "xtensa-esp32s2-elf-gdb -q -x openocd.gdb"
+rustflags = [
+  "-C", "link-arg=-Wl,-Tlink.x",
+  "-C", "link-arg=-nostartfiles",
+]
+
+[build]
+rustc = "/home/grey/development/cryptok/rust-xtensa/build/x86_64-unknown-linux-gnu/stage0/bin/rustc"
+rustdoc = "/home/grey/development/cryptok/rust-xtensa/build/x86_64-unknown-linux-gnu/stage0/bin/rustdoc"
+
+[unstable]
+build-std = ["core"]

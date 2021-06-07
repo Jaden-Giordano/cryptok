@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+export PATH="$PATH:$(pwd)/esp/xtensa-esp32s2-elf/bin"

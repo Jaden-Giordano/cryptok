@@ -1,0 +1,13 @@
+[package]
+name = "cryptok"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+xtensa-lx-rt = "0.5.0"
+xtensa-lx = "0.3.0"
+panic-halt = "0.2.0"
+esp32-hal = "0.2.0"
+
+[features]
+default = ["xtensa-lx-rt/lx6", "xtensa-lx/lx6"]
