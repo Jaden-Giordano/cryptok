@@ -24,13 +24,12 @@ git clone --recurse-submodules https://github.com/Jaden-Giordano/cryptok
 
 You'll need to grab the latest xtensa-esp32s2-elf toolchain from [here](https://github.com/espressif/crosstool-NG/releases).
 
-*Note:* Be sure to grab the the `esp32s2` one as well as right one for your machine (cpu and operating system); it will most likely be:
-1. For intel CPUs: xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-i686.tar.gz
-2. For cpus CPUs: xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-amd64.tar.gz
+*Note:* Be sure to grab the the `esp32s2` one as well as right one for your machine (operating system); it will most likely be:
+For cpus CPUs: xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-amd64.tar.gz
 
 ``` sh
 mkdir ./esp
-tar -xzf xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-<arch>.tar.gz -C ./esp
+tar -xzf xtensa-esp32s2-elf-gcc8_4_0-esp-<version>-<os>-amd64.tar.gz -C ./esp
 ```
 
 #### Building and Flashing tools
